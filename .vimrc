@@ -45,6 +45,8 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 nnoremap <C-W> :bdelete<CR>
 
+nnoremap ; :Files<CR>
+
 " Turn on syntax highlighting
 syntax on
 
@@ -117,12 +119,13 @@ set ignorecase
 set smartcase
 set showmatch
 let mapleader = ","
-map <leader><space> :let @/=''<cr> " clear search
+" clear search
+map <leader><space> :let @/=''<cr>
 
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
 " Use your leader key + l to toggle on/off
-map <leader>l :set list!<CR> " Toggle tabs and EOL
+map <leader>l :set list!<CR>
 
 nnoremap gc :Gcommit -a<CR>
 nnoremap gp :Gpush<CR>

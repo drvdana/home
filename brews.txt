@@ -1,0 +1,16 @@
+awscli
+bat
+diff-so-fancy
+entr
+fzf
+git
+git-secrets
+neovim
+noti
+nvm
+postgresql
+telnet
+the_silver_searcher
+tldr
+vim
+yarn

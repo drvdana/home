@@ -2,6 +2,19 @@ alias ls="ls -FG"
 
 export PATH=$PATH:$HOME/bin
 
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+alias pre="fzf --preview 'bat --color \"always\" {}'"
+
+alias vi='nvim'
+alias vim='nvim'
+alias vimdiff='nvim -d'
+export EDITOR=nvim
+
+source $HOME/.tldr.complete
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
